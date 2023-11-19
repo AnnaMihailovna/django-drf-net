@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "django-drf-net"
+version = "0.1.0"
+description = "Sotial network by Django"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2.7"
+pillow = "^10.1.0"
+djangorestframework = "^3.14.0"
+djangorestframework-simplejwt = "^5.3.0"
+djoser = "^2.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
