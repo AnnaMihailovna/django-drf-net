@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "django-drf-net"
 version = "0.1.0"
-description = "Sotial network by Django"
+description = "Soctial network by Django"
 authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 
