@@ -1,2 +1,2 @@
 ### django-drf-net
-(only start)
+Social network by Django.
