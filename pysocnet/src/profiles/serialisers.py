@@ -2,7 +2,7 @@ from rest_framework import serializers
 
 from .models import UserNet
 
-class GetUserNetSerialiser(serializers.ModelSerializer):
+class GetUserNetSerializer(serializers.ModelSerializer):
     """
     Вывод информации о user.
     """
@@ -14,5 +14,26 @@ class GetUserNetSerialiser(serializers.ModelSerializer):
             "last_login",
             "is_active",
             "is_staff",
-            "is_superuser"
+            "is_superuser",
+            "groups",
+            "user_permissions"
+        )
+
+class GetUserNetPublicSerializer(serializers.ModelSerializer):
+    """ 
+    Вывод публичной информации о user.
+    Доступно всем.
+    """
+    class Meta:
+        model = UserNet
+        exclude = (
+            "email",
+            "phone",
+            "password",
+            "last_login",
+            "is_active",
+            "is_staff",
+            "is_superuser",
+            "groups",
+            "user_permissions"
         )
