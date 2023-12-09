@@ -6,6 +6,7 @@ class GetUserNetSerializer(serializers.ModelSerializer):
     """
     Вывод информации о user.
     """
+    avatar = serializers.ImageField(read_only=True)
 
     class Meta:
         model = UserNet
